@@ -1,0 +1,122 @@
+.title{
+    font-weight: 900;
+    margin: 0 270px ;
+    width: 60%;
+    font-family: "Agrave Pro", cursive;
+    font-size: 80px;
+    
+}
+
+.Aboutapp{
+    opacity: 0.7;
+    margin: 0 270px 80px;
+    width: 60%;
+    line-height: 50px;
+    
+}
+
+.contactusform{
+    margin:30px 270px ;
+    text-align: center;
+    background: #ff358d;
+    background: radial-gradient(circle, rgb(255, 48, 138) 0%, rgb(23, 62, 105) 100%);
+    border-radius: 32px;
+}
+.contactinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 110px;
+}
+.contactbuttons{
+    padding: 30px 110px;
+    
+}
+.contactformlabel{
+    background: #ff358d;
+    background:radial-gradient(circle, rgb(255, 48, 138) 0%, rgb(37, 104, 180) 100%);
+    color: white;
+    border-radius: 32px;
+    text-align: center;
+    font-weight:900 ; 
+    margin: 0 270px;
+    padding: 30px 0;
+    width: 810px;
+    font-size: 35px;
+
+}
+
+.contactbutton{
+    width: 70px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+input{
+    width: 350px;
+    height: 50px;
+    border-radius: 34px;
+    padding: 0 20px;
+    border: none;
+}
+
+.contactbutton:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+@media (max-width: 1024px) {
+
+    .title,
+    .Aboutapp,
+    .contactusform,
+    .contactformlabel {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactinput {
+        padding: 30px 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .Aboutapp {
+        line-height: 32px;
+        text-align: center;
+    }
+
+    
+    .contactusform {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contactinput {
+        width: 100%;
+        padding: 15px 0;
+        align-items: center;
+    }
+
+    input {
+        width: 100%; 
+    }
+
+    .contactbuttons {
+        flex-direction: row; 
+        justify-content: center;
+        padding: 15px 0;
+        gap: 20px;
+    }
+
+}

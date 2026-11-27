@@ -1,0 +1,59 @@
+.allitems{
+    display: grid;
+    grid-template-columns: auto auto;
+    color:black;
+    justify-content: center;
+    padding: 0 40px;
+    gap: 120px;
+}
+
+.oneitem{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    text-align: center;
+    width: 270px;
+    height: 450px;
+    justify-content: space-around;
+}
+
+.buyitem{
+    height: 40px;
+    width: 85px;
+    border-radius: 32px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+.buyitem:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    color: white;
+    background-color: rgb(82, 79, 79);
+    
+}
+.itemname{
+    font-size: 35px;
+}
+.itemprice{
+    font-size: 20px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .allitems {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    /* Switch menu grid from 2 columns to 1 column */
+    .allitems {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 35px;
+    }
+}
