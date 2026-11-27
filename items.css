@@ -33,6 +33,7 @@
     background-color: rgb(102, 78, 42);
     
 }
+
 .itemname{
     font-size: 35px;
 }
@@ -42,25 +43,26 @@
 .itemimage{
     height: 200px;
     width: 200px;
+    object-fit: cover; 
+    border-radius: 16px;
 }
 
-
-
-
-
 @media (max-width: 1024px) {
-
     .allitems {
         gap: 50px;
     }
 }
 
 @media (max-width: 768px) {
-    
-    /* Switch menu grid from 2 columns to 1 column */
     .allitems {
         grid-template-columns: 1fr;
         justify-items: center;
+        padding: 0 15px;
         gap: 35px;
+    }
+
+    .oneitem {
+        width: 100%;
+        max-width: 300px;
     }
 }
